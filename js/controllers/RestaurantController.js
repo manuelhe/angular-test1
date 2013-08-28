@@ -8,5 +8,7 @@ foodMeApp.controller('RestaurantController',
 			$location.path( "/customer" );
 		}
 
+		$scope.customer = customer;
+
 		$scope.restaurants = Restaurant.query();
 });
