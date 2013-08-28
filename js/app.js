@@ -13,6 +13,10 @@ foodMeApp.config(function($routeProvider) {
         controller: 'CustomerController',
         templateUrl: 'views/customer.html'
       }).
+      when('/menu/:restaurantId', {
+        controller: 'MenuController',
+        templateUrl: 'views/menu.html'
+      }).
       when('/who-we-are', {
         templateUrl: 'views/who-we-are.html'
       }).
